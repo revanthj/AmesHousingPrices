@@ -5,10 +5,14 @@ The Ames Housing dataset was compiled by Dean De Cock for use in data science ed
 
 ### DataAnalysis_NumericFeatures: 
     In this jupyter notebook, I analyzed numerical features and Sale Price(target variable) and selected below features.
-        OverallQual, GarageCars, YearBuilt,FullBath, TotalBsmtSF, YearRemodAdd, TotRmsAbvGrd, Fireplaces, OpenPorchSF, LotArea, MasVnrArea
+        
+        OverallQual, GarageCars, YearBuilt,FullBath, 
+        TotalBsmtSF, YearRemodAdd, TotRmsAbvGrd, Fireplaces, 
+        OpenPorchSF, LotArea, MasVnrArea
     
 ### DataAnalysis_CategoricalFeatures: 
     In this jupyter notebook, I analyzed categorical features and selected below features.
-    Neighborhood, PoolQC, Heating, Condition2.
+        
+        Neighborhood, PoolQC, Heating, Condition2.
 
 
