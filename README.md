@@ -8,7 +8,8 @@ The Ames Housing dataset was compiled by Dean De Cock for use in data science ed
   
 ## Numerical Feature Analysis
 
-Notebook : DataAnalysis_NumericFeatures.ipynb
+**Notebook :** DataAnalysis_NumericFeatures.ipynb
+
 Steps Followed:
 * Fill missing values for features by taking appropriate approach.
 
