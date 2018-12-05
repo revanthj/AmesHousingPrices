@@ -5,7 +5,7 @@ The Ames Housing dataset was compiled by Dean De Cock for use in data science ed
 
   - [Numerical Feature Analysis](#numerical-feature-analysis)
   - [Categorical Feature Analysis](#categorical-feature-analysis)
-  - [RIDGE Model](#ridge-l2-model)
+  - [L2 Regularized Model](#l2-regularized-model)
   
   
 ## Numerical Feature Analysis
