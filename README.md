@@ -5,7 +5,7 @@ The Ames Housing dataset was compiled by Dean De Cock for use in data science ed
 
   - [Numerical Feature Analysis](#numerical-feature-analysis)
   - [Categorical Feature Analysis](#categorical-feature-analysis)
-  - [RIDGE (L2 Regularization) Model](#ridge-l2-model)
+  - [RIDGE Model](#ridge-l2-model)
   
   
 ## Numerical Feature Analysis
@@ -24,7 +24,7 @@ The Ames Housing dataset was compiled by Dean De Cock for use in data science ed
 * Pick features that have high correlation with SalePrice. Then, check for multi collinearity between selected features and eliminate redundancy.
 
 
-## Categorical Feature Analysis
+## RIDGE Model
 
 **Notebook :** DataAnalysis_CategoricalFeatures.ipynb
 
