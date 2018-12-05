@@ -7,6 +7,7 @@ The Ames Housing dataset was compiled by Dean De Cock for use in data science ed
   - [Categorical Feature Analysis](#categorical-feature-analysis)
   - [L2 Regularized Model](#l2-regularized-model)
   - [LASSO Feature Selection](#lasso-feature-selection)
+  - [Recursive Feature Elimination](#recursive-feature-elimination)
   
   
 ## Numerical Feature Analysis
@@ -71,3 +72,16 @@ The Ames Housing dataset was compiled by Dean De Cock for use in data science ed
 * SUMMARY
 
 
+## Recursive Feature Elimination
+
+**Notebook :** RecursiveFeatureElimination.ipynb
+
+**Key Steps:**
+
+* Correct distribution of Sale Price and numerical features to follow GAUSSIAN distribution by applying LOG transformation. 
+
+* Apply LASSO Model to eliminate irrelevant features.
+
+* Apply L2 Regularization (RIDGE) model on LASSO selected features and compare scores with baseline model.
+
+* SUMMARY
