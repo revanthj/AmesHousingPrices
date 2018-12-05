@@ -12,7 +12,7 @@ The Ames Housing dataset was compiled by Dean De Cock for use in data science ed
 
 **Notebook :** DataAnalysis_NumericFeatures.ipynb
 
-**Steps Followed:**
+**Key Steps:**
 * Fill missing values for features by taking appropriate approach.
 
 * Visualize distribution of SalePrice to check for skewness in data. If skew present, data has to be transformed since linear models require normal distribution.
@@ -28,7 +28,7 @@ The Ames Housing dataset was compiled by Dean De Cock for use in data science ed
 
 **Notebook :** DataAnalysis_CategoricalFeatures.ipynb
 
-**Steps Followed:**
+**Key Steps:**
 * Fill missing values for features by taking appropriate approach.
 
 * Calculate Analysis of Variance (ANOVA) to find correlation between categorical features and SalePrice. Select features that has high correlation with Sale Price.
@@ -38,11 +38,20 @@ The Ames Housing dataset was compiled by Dean De Cock for use in data science ed
 
 ## L2 Regularized Model
 
-**Notebook :** DataAnalysis_CategoricalFeatures.ipynb
+**Notebook :** L2RegularizedModel.ipynb
 
-**Steps Followed:**
-* Fill missing values for features by taking appropriate approach.
+**Key Steps:**
 
-* Calculate Analysis of Variance (ANOVA) to find correlation between categorical features and SalePrice. Select features that has high correlation with Sale Price.
+* From Numerical Analysis, we found that Sale Price data is positively Skewed. Correct disribution by applying LOG transformation.
+
+* Check whether selected numerical features have normally distribution or not. If not, apply LOG transformation and correct them.
   
-* Check for multi collinearity between selected features and eliminate redundancy.
+* Rescale independent variables by applying standardization (Refer https://machinelearningmastery.com/normalize-standardize-machine-learning-data-weka/)
+
+* Split input data into training and test sets. Train basic linear model with default parameters on training data and establish baseline scores.
+
+* Apply L2 Regularization model on data and compare scores with baseline model.
+
+* SUMMARY
+
+
