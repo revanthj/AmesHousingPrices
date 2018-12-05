@@ -5,6 +5,7 @@ The Ames Housing dataset was compiled by Dean De Cock for use in data science ed
 
   - [Numerical Feature Analysis](#numerical-feature-analysis)
   - [Categorical Feature Analysis](#categorical-feature-analysis)
+  - [RIDGE (L2 Regularization) Model](#ridge-l2-model)
   
   
 ## Numerical Feature Analysis
@@ -24,6 +25,18 @@ The Ames Housing dataset was compiled by Dean De Cock for use in data science ed
 
 
 ## Categorical Feature Analysis
+
+**Notebook :** DataAnalysis_CategoricalFeatures.ipynb
+
+**Steps Followed:**
+* Fill missing values for features by taking appropriate approach.
+
+* Calculate Analysis of Variance (ANOVA) to find correlation between categorical features and SalePrice. Select features that has high correlation with Sale Price.
+  
+* Check for multi collinearity between selected features and eliminate redundancy.
+
+
+## RIDGE (L2 Regularization) Model
 
 **Notebook :** DataAnalysis_CategoricalFeatures.ipynb
 
