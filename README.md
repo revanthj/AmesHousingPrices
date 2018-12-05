@@ -6,6 +6,7 @@ The Ames Housing dataset was compiled by Dean De Cock for use in data science ed
   - [Numerical Feature Analysis](#numerical-feature-analysis)
   - [Categorical Feature Analysis](#categorical-feature-analysis)
   - [L2 Regularized Model](#l2-regularized-model)
+  - [LASSO Feature Selection](#lasso-feature-selection)
   
   
 ## Numerical Feature Analysis
@@ -51,6 +52,21 @@ The Ames Housing dataset was compiled by Dean De Cock for use in data science ed
 * Split input data into training and test sets. Train basic linear model with default parameters on training data and establish baseline scores.
 
 * Apply L2 Regularization model on data and compare scores with baseline model.
+
+* SUMMARY
+
+
+## LASSO Feature Selection
+
+**Notebook :** LassoFeatureSelection.ipynb
+
+**Key Steps:**
+
+* Correct distribution of Sale Price and numerical features to follow GAUSSIAN distribution by applying LOG transformation. 
+
+* Apply LASSO Model to eliminate irrelevant features.
+
+* Apply L2 Regularization (RIDGE) model on LASSO selected features and compare scores with baseline model.
 
 * SUMMARY
 
