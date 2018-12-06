@@ -9,6 +9,8 @@ The Ames Housing dataset was compiled by Dean De Cock for use in data science ed
   - [LASSO Feature Selection](#lasso-feature-selection)
   - [Linear Model With Backward Elimination](#linear-model-with-backward-elimination)
   - [Decision Tree Model](#decision-tree-model)
+  - [Random Forest Model](#random-forest-model)
+  - [Stacked Model](#stacked-model)
   
   
 ## Numerical Feature Analysis
@@ -113,5 +115,46 @@ Decision Tree is a Non-Parametric model which means it do not make strong assump
 * Implement decision tree with selected best parameters and compare with baseline model.
 
 * It is observed that Optimal parameter model is not performing as expected. Since I tuned paramters individually, optimal value of one parameters might not work best with optimal value of other parameter. Resolution is to tune parameters with Random Search or Grid Search CV.
+
+* SUMMARY
+
+
+## Random Forest Model
+
+**Notebooks :** RandomForestRegressor.ipynb
+
+**Key Steps:**
+
+* Impute missing values. Select features from Backward Elimination.
+
+* Apply random forest model with default parameters and establish baseline scores.
+
+* Tune random forest parameters such as n_estimators, min_samples_split, min_samples_leaf, max_depth using RandomizedSearchCV
+
+* Implement random forest with selected best parameters and compare with baseline model.
+
+* SUMMARY
+
+
+## Stacked Model
+
+**Notebooks :** StackedModel.ipynb
+
+In this notebook, I implemented 2 techniques.
+* **Average Model** : This is a simple technique. I trained 4 models and averaged predictions of 4 models to give output.
+
+* **Stacked Model** : Stacking (also called meta ensembling) is a model ensembling technique used to combine information from multiple predictive models to generate a new model. 
+
+**Key Steps:**
+
+* Impute missing values. Correct the distribution of Sale Price and numerical features to follow GAUSSIAN distribution by applying LOG transformation.
+
+* Select features from Backward Elimination.
+
+* Train 4 models i.e. LASSO, RIDGE, ElasticNet and Random Forest.
+
+* Implement Average Model that averages output from above 4 models to predict output
+
+* Implement Stacked model that combines output from 3 models to produce input for meta model.
 
 * SUMMARY
