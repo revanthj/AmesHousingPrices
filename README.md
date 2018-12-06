@@ -7,7 +7,7 @@ The Ames Housing dataset was compiled by Dean De Cock for use in data science ed
   - [Categorical Feature Analysis](#categorical-feature-analysis)
   - [L2 Regularized Model](#l2-regularized-model)
   - [LASSO Feature Selection](#lasso-feature-selection)
-  - [Recursive Feature Elimination](#recursive-feature-elimination)
+  - [Linear Model With Backward Elimination](#linear-model-with-backward-elimination)
   
   
 ## Numerical Feature Analysis
@@ -46,7 +46,7 @@ The Ames Housing dataset was compiled by Dean De Cock for use in data science ed
 
 * From Numerical Analysis, we found that Sale Price data is positively Skewed. Correct disribution by applying LOG transformation.
 
-* Check whether selected numerical features have normally distribution or not. If not, apply LOG transformation and correct them.
+* Impute missing values. Check whether selected numerical features have normally distribution or not. If not, apply LOG transformation and correct them.
   
 * Rescale independent variables by applying standardization (Refer https://machinelearningmastery.com/normalize-standardize-machine-learning-data-weka/)
 
@@ -63,7 +63,7 @@ The Ames Housing dataset was compiled by Dean De Cock for use in data science ed
 
 **Key Steps:**
 
-* Correct distribution of Sale Price and numerical features to follow GAUSSIAN distribution by applying LOG transformation. 
+* Impute missing values. Correct the distribution of Sale Price and numerical features to follow GAUSSIAN distribution by applying LOG transformation. 
 
 * Apply LASSO Model to eliminate irrelevant features.
 
@@ -72,16 +72,24 @@ The Ames Housing dataset was compiled by Dean De Cock for use in data science ed
 * SUMMARY
 
 
-## Recursive Feature Elimination
+## Linear Model With Backward Elimination
 
-**Notebook :** RecursiveFeatureElimination.ipynb
+**Notebooks :** BackwardFeatureElimination.ipynb, BackwardElimination_NumericFeatureOnly.ipynb
+
+Backward Elimination is a feature selection technique that start with all the features and removes least significant feature (by comparing with preselected p-value) at each iteration thereby improving performance of the model. This is repeated until all features are more significant than preselected p-value
 
 **Key Steps:**
 
-* Correct distribution of Sale Price and numerical features to follow GAUSSIAN distribution by applying LOG transformation. 
+* Impute missing values. Correct the distribution of Sale Price and numerical features to follow GAUSSIAN distribution by applying LOG transformation. 
 
-* Apply LASSO Model to eliminate irrelevant features.
+* Select a p-value (generally p=0.05)
 
-* Apply L2 Regularization (RIDGE) model on LASSO selected features and compare scores with baseline model.
+* Calculate p-value of each feature using statsmodels OLS technique. 
+
+* Iterate though feature p-value list and eliminate a feature with highest p-value that is greater than preselected p-value.
+
+* If feature with highest p-value is less than or equal to preselected p-value, break the loop.
+
+* Apply L2 Regularization (RIDGE) model on remaining features and compare scores with baseline model.
 
 * SUMMARY
