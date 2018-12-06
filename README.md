@@ -8,6 +8,7 @@ The Ames Housing dataset was compiled by Dean De Cock for use in data science ed
   - [L2 Regularized Model](#l2-regularized-model)
   - [LASSO Feature Selection](#lasso-feature-selection)
   - [Linear Model With Backward Elimination](#linear-model-with-backward-elimination)
+  - [Decision Tree Model](#decision-tree-model)
   
   
 ## Numerical Feature Analysis
@@ -91,5 +92,26 @@ Backward Elimination is a feature selection technique that start with all the fe
 * If feature with highest p-value is less than or equal to preselected p-value, break the loop.
 
 * Apply L2 Regularization (RIDGE) model on remaining features and compare scores with baseline model.
+
+* SUMMARY
+
+
+## Decision Tree Model
+
+**Notebooks :** DecisionTreeRegressor.ipynb
+
+Decision Tree is a Non-Parametric model which means it do not make strong assumptions about the form of the mapping function. By not making assumptions, they are free to learn any functional form from the training data.
+
+**Key Steps:**
+
+* Impute missing values. Select features from Backward Elimination.
+
+* Apply decision tree model with default parameters and establish baseline scores.
+
+* Tune parameters of the decision tree such as max_depth, min_samples_split, min_samples_leaf, max_features and select value that give best accuracy. 
+
+* Implement decision tree with selected best parameters and compare with baseline model.
+
+* It is observed that Optimal parameter model is not performing as expected. Since I tuned paramters individually, optimal value of one parameters might not work best with optimal value of other parameter. Resolution is to tune parameters with Random Search or Grid Search CV.
 
 * SUMMARY
