@@ -58,6 +58,8 @@ The Ames Housing dataset was compiled by Dean De Cock for use in data science ed
 * Apply L2 Regularization model on data and compare scores with baseline model.
 
 * SUMMARY
+ * MSE for Linear Regression = 0.0279
+ * MSE for L2 Model = 0.0268
 
 
 ## LASSO Feature Selection
@@ -73,6 +75,7 @@ The Ames Housing dataset was compiled by Dean De Cock for use in data science ed
 * Apply L2 Regularization (RIDGE) model on LASSO selected features and compare scores with baseline model.
 
 * SUMMARY
+ * With LASSO Feature Selection, MSE for L2 Model = 0.024
 
 
 ## Linear Model With Backward Elimination
@@ -96,6 +99,8 @@ Backward Elimination is a feature selection technique that start with all the fe
 * Apply L2 Regularization (RIDGE) model on remaining features and compare scores with baseline model.
 
 * SUMMARY
+ * With numerical and categorical features combined, MSE for L2 Model = 0.0314
+ * With numerical features only, MSE for L2 Model = 0.0256
 
 
 ## Decision Tree Model
@@ -117,6 +122,7 @@ Decision Tree is a Non-Parametric model which means it do not make strong assump
 * It is observed that Optimal parameter model is not performing as expected. Since I tuned paramters individually, optimal value of one parameters might not work best with optimal value of other parameter. Resolution is to tune parameters with Random Search or Grid Search CV.
 
 * SUMMARY
+ * With Hyper Parameter Tuning, I improved decision tree accuracy from 77.01% to 78.35% (with adjusted optimal values)
 
 
 ## Random Forest Model
@@ -134,6 +140,7 @@ Decision Tree is a Non-Parametric model which means it do not make strong assump
 * Implement random forest with selected best parameters and compare with baseline model.
 
 * SUMMARY
+ * With Hyper Parameter Tuning, I improved random forest accuracy from 81.36% to 84.99%
 
 
 ## Stacked Model
@@ -158,3 +165,5 @@ In this notebook, I implemented 2 techniques.
 * Implement Stacked model that combines output from 3 models to produce input for meta model.
 
 * SUMMARY
+ * Simple Average Model Accuracy = 89.02%
+ * Stacked Model Accuracy = 88.85%
