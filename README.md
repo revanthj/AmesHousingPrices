@@ -122,7 +122,7 @@ Decision Tree is a Non-Parametric model which means it do not make strong assump
 * It is observed that Optimal parameter model is not performing as expected. Since I tuned paramters individually, optimal value of one parameters might not work best with optimal value of other parameter. Resolution is to tune parameters with Random Search or Grid Search CV.
 
 * **SUMMARY**
-  * With Hyper Parameter Tuning, I improved decision tree accuracy from 77.01% to 78.35% (with adjusted optimal values)
+  * With Hyper Parameter Tuning, I improved decision tree R-squared coefficient from 77.01% to 78.35% (with adjusted optimal values)
 
 
 ## Random Forest Model
@@ -140,7 +140,7 @@ Decision Tree is a Non-Parametric model which means it do not make strong assump
 * Implement random forest with selected best parameters and compare with baseline model.
 
 * **SUMMARY**
-  * With Hyper Parameter Tuning, I improved random forest accuracy from 81.36% to 84.99%
+  * With Hyper Parameter Tuning, I improved random forest R-squared coefficient from 81.36% to 84.99%
 
 
 ## Stacked Model
@@ -165,5 +165,5 @@ In this notebook, I implemented 2 techniques.
 * Implement Stacked model that combines output from 3 models to produce input for meta model.
 
 * **SUMMARY**
-  * Simple Average Model Accuracy = 89.02%
-  * Stacked Model Accuracy = 88.85%
+  * Simple Average Model R-squared coefficient = 89.02%
+  * Stacked Model R-squared coefficient = 88.85%
