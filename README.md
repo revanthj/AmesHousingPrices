@@ -115,7 +115,7 @@ Decision Tree is a Non-Parametric model which means it do not make strong assump
 
 * Apply decision tree model with default parameters and establish baseline scores.
 
-* Tune parameters of the decision tree such as max_depth, min_samples_split, min_samples_leaf, max_features and select value that give best accuracy. 
+* Tune parameters of the decision tree such as max_depth, min_samples_split, min_samples_leaf, max_features and select value that give best R-squared coefficient. 
 
 * Implement decision tree with selected best parameters and compare with baseline model.
 
